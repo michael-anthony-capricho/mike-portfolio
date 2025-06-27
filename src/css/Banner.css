@@ -1,0 +1,181 @@
+/************ Custom Font ************/
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
+
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.grad-pic{
+  top: -100px !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
+@media (max-width:760px) {
+	.grad-pic{
+    display: none;
+  }
+}
+p.success {
+	color: green;
+}
+
+p.danger {
+	color: red;
+}
+
+.grad-pic{
+  box-shadow: 0px 5px 30px #cdcdcdb1;
+}
+/************ Banner Css ************/
+.banner {
+  position: relative;
+  margin: auto;
+  height: 100vh;
+  padding: 20vh 0;
+}
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background-color: #f5f5f5;
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  width: 20%;
+}
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p {
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+.banner .connect-btn {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  background-color: transparent;
+}
+.banner .connect-btn svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.banner .connect-btn:hover svg {
+  margin-left: 25px;
+}
+
+.banner .download-btn {
+  color: #000000;
+  font-size: 20px;
+  margin-top: 60px;
+  position: relative; 
+  align-items: center;
+  border: 0;
+  border-radius: 1000px;
+  width: fit-content;
+  padding: 5px 20px;
+}
+.banner .download-btn:hover{
+  background-color: #d6d6d6;
+}
+.banner .download-btn{
+  transition: 0.3s ease-in-out;
+}
+
+
+.banner img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
